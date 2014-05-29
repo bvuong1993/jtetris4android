@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/countLabel"
+        android:layout_below="@+id/countLabel"
+        android:layout_marginTop="16dp"
+        android:text="@string/scoreLabelInit" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scoreLabel"
+        android:layout_below="@+id/scoreLabel"
+        android:layout_marginTop="14dp"
+        android:text="@string/timeLabelInit" />
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/powerButton"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/countLabelInit" />
+
+    <Button
+        android:id="@+id/leftButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeLabel"
+        android:layout_alignRight="@+id/rotateButton"
+        android:layout_centerVertical="true"
+        android:text="@string/leftString" />
+
+    <Button
+        android:id="@+id/rightButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/countLabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/leftButton"
+        android:layout_marginTop="21dp"
+        android:text="@string/rightString" />
+
+    <Button
+        android:id="@+id/dropButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rightButton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rightButton"
+        android:layout_marginTop="16dp"
+        android:text="@string/dropString" />
+
+    <Button
+        android:id="@+id/rotateButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dropButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/rotateString" />
+
+   <!--  <com.example.JTetris4Android.TetrisUI
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /> -->
+
+    <com.example.jtetris4android.TetrisUI
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rotateButton"
+        android:layout_toLeftOf="@+id/scoreLabel" />
+
+    <ToggleButton
+        android:id="@+id/powerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:layout_toRightOf="@+id/view1"
+        android:textOff="@string/powerButtonOff"
+        android:textOn="@string/powerButtonOn" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignParentTop="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeLabel"
+        android:layout_alignParentRight="true" />
+ 
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JTetris4Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="countLabelInit">Piece 0</string>
+    <string name="scoreLabelInit">Score 0</string>
+    <string name="timeLabelInit">0 second</string>
+    <string name="powerButtonOn">Stop</string>
+    <string name="powerButtonOff">Start</string>
+    <string name="leftString">LEFT</string>
+    <string name="rightString">RIGHT</string>
+    <string name="dropString">DROP</string>
+    <string name="rotateString">ROTATE</string>
+    <string name="title_activity_main">JTetris (Android version)</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="result_string">RESULT</string>
+    <string name="ok_string">OK</string>
+    <string name="title_activity_server">ServerActivity</string>
+    <string name="startServer_button_label">Start Server!</string>
+    <string name="competive_mode_label">Compet. Mode</string>
+    <string name="localhost">127.0.0.1</string>
+
+</resources>
